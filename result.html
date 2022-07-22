@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESULT PAGE</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <H1>RESULT PAGE</H1>
+    <hr>
+    <h4>
+        ESTIMATED ACCUMULATED WATER FLOWS FROM OUR PREDICTION MODEL FOR<br>  </h4>
+        <h3>
+        State : <span id="first-name"></span>  <br>
+        Rainfall( in mm) : <span id="rainfall"></span> <br>
+        is
+        </h3>
+       <div id="outputt">
+        <h3>17204.59023025 mm<sup>3</sup>/s</h3>
+        <br>
+        <h3>Inference from the above Predicted Value</h3>
+        <img src="./Untitled-1.jpg" alt="my pic" class="pc">
+       </div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+
+        const firstname = localStorage.getItem('first-name');
+        const rainn = localStorage.getItem('rainfall');
+
+        document.getElementById('first-name').textContent = firstname;
+        document.getElementById('rainfall').textContent = rainn;
+    </script>
+
+
+</body>
+</html>

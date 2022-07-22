@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Flow Predictor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 class=""c1">CODER'Z</h1>
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="https://docs.google.com/presentation/d/1l4E_GfDz-CGHWzbUVLd7g5ufgMHiAK-d/edit?usp=sharing&ouid=116431001345691995984&rtpof=true&sd=true">ABOUT OUR PROJECT</a></li>
+                <li><a href="#">CONTACT US </a></li>
+              
+            </ul>
+            <a href="https://docs.google.com/presentation/d/1PnjF2lHba4DfBnrq4bm4DrfKV18bq5Of/edit?usp=sharing&ouid=116431001345691995984&rtpof=true&sd=true" class="btn">THE TEAM</a>
+        </nav>
+    </header> 
+
+    <hr>
+
+
+    
+
+    <h1>GEO DATA BASED PREDICTION MODEL</h1>
+    <br>
+    <h3>Enter the name of the State and Rainfall in mm</h3>
+ <!-- <div class="ip"></div>
+    <input class="input">
+    <input class="input2">
+    <br>
+    <br>
+    <button onclick="myfunc()" class="btn" id="funcc">SUBMIT</button>
+    <h2 class="message"></h2>
+
+
+    <script>
+        function myfunc()
+        {
+          let userInput = document.querySelector(".input");
+          let userInput2 = document.querySelector(".input2");
+          let message = document.querySelector(".message");
+          message.innerHTML = "Accumulated Water Flow for "+ userInput.value + " with rainfall of "+userInput2.value+"mm according to SVM model of ML is<br> lol"
+        }  
+    </script> -->
+    <form id="form">
+        <input type="text" id="name" placeholder="Enter name of the State" />
+        <input type="text" id="rainfall" placeholder="Enter Rainfall data" />
+        <br>
+        <br>
+        <button type="submit" class="btn" id="llll">SUBMIT</button>
+    </form>
+   <H4>Our objective is to find the best accuracy for our Geo   
+    Prediction Model for which we have to use <br> various   
+    regression, classification models that will eventually  
+    lead to model from where we can predict <br> the desired 
+    results to estimate accumulated water flows from   
+   weather forecasts, rain data and measured flows   <br>
+    that will be directly displayed in a website which could 
+    be easily accessible by all.
+   </H4>
+    <script>
+        const form = document.getElementById('form');
+        const name = document.getElementById('name');
+        const rainfall = document.getElementById('rainfall');
+
+        form.addEventListener('submit', function(e)
+        {
+            e.preventDefault();
+
+            const nameVal = name.value;
+            const rainfallVal = rainfall.value;
+
+            localStorage.setItem('first-name',nameVal)
+            localStorage.setItem('rainfall',rainfallVal)
+
+            window.location.href = "result.html" ;
+        })
+    </script>
+</body>
+</html>
